@@ -49,17 +49,11 @@ $$d = \frac{|S_i - \theta_k|}{\sigma}, \quad \sigma = 0.2$$
 
 数学表示（GitHub 友好）：
 
-```text
-d = |S_i - θ_k| / σ,  where σ = 0.2
+![d formula](assets/eq_d.svg)
 
-w(d) = exp(-α · d)
+![w(d) formula](assets/eq_wd.svg)
 
-θ_f = clip(
-  if S_i < θ_k: θ_k,
-  else: θ_k + (1 - exp(-α · d)) * (S_i - θ_k),
-  θ_min, θ_max
-)
-```
+![θ_f formula](assets/eq_theta.svg)
 
 ### 安装与运行
 
